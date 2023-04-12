@@ -23,7 +23,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-with DAG('example_dag_generated',
+with DAG('dag2',
          start_date=datetime(2019, 1, 1),
          max_active_runs=3,
          schedule_interval=timedelta(minutes=30),
